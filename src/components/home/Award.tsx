@@ -54,7 +54,7 @@ function Home() {
           </div>
         </div>
         <div className="py-14"></div>
-        <div className="bg-[#FF9C00] py-24">
+        <div className="bg-orange-peel py-24">
           <div className="grid md:grid-cols-3 gap-6 py-16 px-6 max-w-[1140px] mx-auto bg-[#FFAA07] rounded-2xl shadow-[0_0_9px_2px_rgba(0,0,0,0.15)]">
             {awards.map((award) => (
               <div className=" p-4 max-w-sm">

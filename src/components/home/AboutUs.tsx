@@ -1,7 +1,7 @@
 function About() {
     return (
 <>
-<div className="bg-[#FF9C00] pt-16">
+<div className="bg-orange-peel pt-16">
         <div className="max-w-[1140px] mx-auto py-8 bg-[#FFAA07] rounded-2xl shadow-[0_0_9px_2px_rgba(0,0,0,0.15)]">
           <p className="text-red-warm  text-center pb-8 text-6xl font-bold">
             About

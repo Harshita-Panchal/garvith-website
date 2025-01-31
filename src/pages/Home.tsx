@@ -24,18 +24,18 @@ function Home() {
 
       {/* Social Media */}
       <div>
-      <div className="pt-[70px]">
+        <div className="pt-[70px]">
           <div className="text-8xl font-bold text-outline text-center">
             Gopal Garvith
           </div>
           <p className="text-red-warm text-6xl font-bold text-center relative bottom-7 ">
-          Social Media
+            Social Media
           </p>
           <p className="text-center mb-3 text-xl">
-          "Thank you so much for the love; may it continue to grow!" ❤️
+            "Thank you so much for the love; may it continue to grow!" ❤️
           </p>
         </div>
-          <FollowersCounter/>
+        <FollowersCounter />
       </div>
     </>
   );

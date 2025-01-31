@@ -14,8 +14,12 @@ export default {
       "desktop": "1920px"
     },
     extend: {
+      fontFamily: {
+        sahitya: ['Sahitya'],
+      },
       colors: {
         "red-warm": "#C30E59",
+        "orange-peel": "#FF9C00"
       }
     },
   },
