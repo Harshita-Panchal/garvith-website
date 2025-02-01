@@ -1,35 +1,43 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-
+import "./App.css";
+import { Link } from "react-router-dom";
+import AppRoutes from "./routes/AppRoutes";
+import Footer from "./components/Footer";
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
       <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+        <nav className="bg-[#C30E59] flex items-center justify-evenly py-4">
+          <div>
+            <img src="src/assets/images/logo.png" alt="" className="w-28" />
+          </div>
+          <ul className="flex text-white">
+            <Link to="/">
+              <li className="px-3 cursor-pointer text-base">Home</li>
+            </Link>
+            <Link to="/about">
+              <li className="px-3 cursor-pointer text-base">About Garvith</li>
+            </Link>
+            <Link to="/performance">
+              <li className="px-3 cursor-pointer text-base">Performance</li>
+            </Link>
+            <Link to="/gallery">
+              <li className="px-3 cursor-pointer text-base">Gallery</li>
+            </Link>
+            <Link to="/contact-us">
+              <li className="px-3 cursor-pointer text-base">Contact US</li>
+            </Link>
+          </ul>
+          <button className="text-white border border-white rounded-full w-44 py-2 ">
+            Book Show
+          </button>
+        </nav>
+        <AppRoutes />
+        {/* <Home />
+         */}
+        <Footer />
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
