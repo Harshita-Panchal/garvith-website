@@ -27,14 +27,14 @@ function Home() {
           <div className="text-8xl font-bold text-outline text-center">
             Gopal Garvith
           </div>
-          <p className="text-red-warm text-6xl font-bold text-center relative bottom-7 ">
+          <p className="text-secondary-orange text-6xl font-bold text-center relative bottom-7 ">
             Awards
           </p>
           <p className="text-center mb-3 text-xl">
             Apart from this, Garvith has also been decorated with these honors.
           </p>
         </div>
-        <div className="bg-red-warm">
+        <div className="bg-[#E0E2EE]">
           <div className="grid md:grid-cols-3 gap-6 py-10 max-w-[1140px] mx-auto">
             {awards.map((award) => (
               <div className="bg-white rounded-xl shadow-lg p-4 max-w-sm">
@@ -44,7 +44,7 @@ function Home() {
                   className="rounded-t-xl w-full h-64 object-cover"
                 />
                 <div className="p-4 text-center">
-                  <h2 className="text-lg font-bold text-pink-600">
+                  <h2 className="text-lg font-bold text-primary-blue">
                     {award.title}
                   </h2>
                   <p className="text-gray-700 mt-2">{award.description}</p>
@@ -54,8 +54,8 @@ function Home() {
           </div>
         </div>
         <div className="py-14"></div>
-        <div className="bg-orange-peel py-24">
-          <div className="grid md:grid-cols-3 gap-6 py-16 px-6 max-w-[1140px] mx-auto bg-[#FFAA07] rounded-2xl shadow-[0_0_9px_2px_rgba(0,0,0,0.15)]">
+        <div className="bg-[#E0E2EE] py-24">
+          <div className="grid md:grid-cols-3 gap-6 py-16 px-6 max-w-[1140px] mx-auto bg-white rounded-2xl shadow-[0_0_9px_2px_rgba(0,0,0,0.15)]">
             {awards.map((award) => (
               <div className=" p-4 max-w-sm">
                 <img
@@ -64,7 +64,7 @@ function Home() {
                   className="rounded-t-xl w-full h-64 object-cover"
                 />
                 <div className="p-4">
-                  <h2 className="text-lg font-bold text-pink-600">
+                  <h2 className="text-lg font-bold text-secondary-orange">
                     {award.title}
                   </h2>
                   <p className=" font-medium mt-2">{award.description}</p>

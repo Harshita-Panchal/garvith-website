@@ -1,12 +1,13 @@
 function About() {
     return (
 <>
-<div className="bg-orange-peel pt-16">
-        <div className="max-w-[1140px] mx-auto py-8 bg-[#FFAA07] rounded-2xl shadow-[0_0_9px_2px_rgba(0,0,0,0.15)]">
-          <p className="text-red-warm  text-center pb-8 text-6xl font-bold">
+<div className="pt-16">
+{/* bg-[#96775F] */}
+        <div className="max-w-[1140px] mx-auto py-8 bg-primary-blue rounded-2xl shadow-[0_0_9px_2px_rgba(0,0,0,0.15)]">
+          <p className="text-white  text-center pb-8 text-6xl font-bold">
             About
           </p>
-          <p className="text-red-warm bg-white py-2 text-center text-2xl ">
+          <p className="text-secondary-orange font-medium bg-white py-2 text-center text-2xl ">
             Gopal Garvith
           </p>
           <div className="flex p-10 pt-16">
@@ -18,7 +19,7 @@ function About() {
               />
             </div>
             <div className="bg-white p-12 rounded-2xl max-w-xl relative right-8 top-8">
-              <h3 className="text-2xl mb-3 text-red-warm font-bold">
+              <h3 className="text-2xl mb-3 text-secondary-orange font-bold">
                 Joyful, Curious, Innocent
               </h3>
               <p className="font-semibold text-base">

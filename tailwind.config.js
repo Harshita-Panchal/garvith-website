@@ -19,7 +19,11 @@ export default {
       },
       colors: {
         "red-warm": "#C30E59",
-        "orange-peel": "#FF9C00"
+        "orange-peel": "#FF9C00",
+        "secondary-orange": "#f9ae65",
+        "primary-blue": "#256882",
+        "light-gray": "#E1E4EB",
+        "brownish-gray":"#4D4542"
       }
     },
   },

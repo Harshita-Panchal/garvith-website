@@ -15,7 +15,7 @@ const Counter = ({ icon, start, end, text }: CounterProps) => {
     if (count < end) {
       interval = setInterval(() => {
         setCount((prev) => (prev + 1 > end ? end : prev + 1));
-      }, 20);
+      }, 10);
     }
     return () => clearInterval(interval);
   }, [count, end]);

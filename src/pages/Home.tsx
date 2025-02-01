@@ -12,12 +12,17 @@ function Home() {
           alt=""
           className="w-[85px] opacity-30 mx-auto"
         />
-        <p className="text-4xl font-semibold text-[#16202f] max-w-5xl mx-auto text-center leading-[66px] py-8">
-          उस हृदय का धाम होने के लिए।
-          <br /> एक सिया का राम होने के लिए। <br />
-          है किए कितने जतन मैने सुनो। <br />
-          आपका उपनाम होने के लिए।
-          <br />
+        <p className="text-4xl font-semibold text-brownish-gray max-w-5xl mx-auto text-center leading-[66px] py-8">
+          {[
+            "उस हृदय का धाम होने के लिए।",
+            "एक सिया का राम होने के लिए।",
+            "है किए कितने जतन मैने सुनो।",
+            "आपका उपनाम होने के लिए।",
+          ].map((line, i) => (
+            <span key={i} className={`typed-line delay-${i + 1} block`}>
+              {line}
+            </span>
+          ))}
         </p>
         <p className="text-center">✍🏻 गोपाल 'गर्वित'</p>
       </div>
@@ -28,7 +33,7 @@ function Home() {
           <div className="text-8xl font-bold text-outline text-center">
             Gopal Garvith
           </div>
-          <p className="text-red-warm text-6xl font-bold text-center relative bottom-7 ">
+          <p className="text-secondary-orange text-6xl font-bold text-center relative bottom-7 ">
             Social Media
           </p>
           <p className="text-center mb-3 text-xl">
