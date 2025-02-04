@@ -31,7 +31,7 @@ const Counter = ({ icon, start, end, text }: CounterProps) => {
 
 const FollowersCounter = () => {
   return (
-    <div className="flex justify-evenly gap-16 py-10">
+    <div className="flex md:flex-row flex-col justify-evenly md:gap-16 gap-5 py-10">
       <Counter icon="src/assets/images/facebook.svg" start={100} end={3000} text="Followers" />
       <Counter icon="src/assets/images/instagram.svg" start={100} end={3300} text="Followers" />
       <Counter icon="src/assets/images/youtube.svg" start={100} end={1600} text="Subscribers" />

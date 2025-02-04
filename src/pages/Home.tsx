@@ -12,7 +12,7 @@ function Home() {
           alt=""
           className="w-[85px] opacity-30 mx-auto"
         />
-        <p className="text-4xl font-semibold text-brownish-gray max-w-5xl mx-auto text-center leading-[66px] py-8">
+        <p className="md:text-4xl text-2xl font-semibold text-brownish-gray max-w-5xl mx-auto text-center md:leading-[66px] py-8">
           {[
             "उस हृदय का धाम होने के लिए।",
             "एक सिया का राम होने के लिए।",
@@ -30,10 +30,10 @@ function Home() {
       {/* Social Media */}
       <div>
         <div className="pt-[70px]">
-          <div className="text-8xl font-bold text-outline text-center">
+          <div className="md:text-8xl text-6xl font-bold text-outline text-center">
             Gopal Garvith
           </div>
-          <p className="text-secondary-orange text-6xl font-bold text-center relative bottom-7 ">
+          <p className="text-primary-blue md:text-6xl text-5xl font-bold text-center relative bottom-7 ">
             Social Media
           </p>
           <p className="text-center mb-3 text-xl">

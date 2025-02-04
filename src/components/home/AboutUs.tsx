@@ -32,7 +32,7 @@ function About() {
           </div>
           <div className="flex p-10 pt-16">
             <div className="bg-white p-12 rounded-2xl max-w-xl relative left-8 top-8 z-10">
-              <h3 className="text-2xl mb-3 text-red-warm font-bold">
+              <h3 className="text-2xl mb-3 text-secondary-orange font-bold">
                 Growth, Opportunity, Achievement
               </h3>
               <p className="font-semibold text-base">
@@ -59,7 +59,7 @@ function About() {
               />
             </div>
             <div className="bg-white p-12 rounded-2xl max-w-xl relative right-8 top-6">
-              <h3 className="text-2xl mb-3 text-red-warm font-bold">
+              <h3 className="text-2xl mb-3 text-secondary-orange font-bold">
                 Emotional, Captivating, Inspiring
               </h3>
               <p className="font-semibold text-base">
@@ -72,7 +72,7 @@ function About() {
           </div>
           <div className="flex p-10 pt-16">
             <div className="bg-white p-12 rounded-2xl max-w-xl relative left-8 top-8 z-10">
-              <h3 className="text-2xl mb-3 text-red-warm font-bold">
+              <h3 className="text-2xl mb-3 text-secondary-orange font-bold">
                 Creative, Impactful, Popular
               </h3>
               <p className="font-semibold text-base">
@@ -99,7 +99,7 @@ function About() {
               />
             </div>
             <div className="bg-white p-12 rounded-2xl max-w-xl relative right-8 top-6">
-              <h3 className="text-2xl mb-3 text-red-warm font-bold">
+              <h3 className="text-2xl mb-3 text-secondary-orange font-bold">
                 Acclaimed, Collaborative, Published
               </h3>
               <p className="font-semibold text-base">

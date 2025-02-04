@@ -2,7 +2,7 @@ import React from "react";
 
 const youtubeVideos = [
   {
-    url: "https://youtu.be/lBvbNxiVmZA?si=oBWVZLel_LvBCwdJ",
+    url: "https://www.youtube.com/watch?v=5p-jJskRSIE&t=25s",
   },
   {
     url: "https://youtu.be/lBvbNxiVmZA?si=oBWVZLel_LvBCwdJ",
@@ -33,7 +33,7 @@ function Performance() {
           <div className="text-8xl font-bold text-outline text-center">
             Gopal Garvith
           </div>
-          <p className="text-red-warm text-6xl font-bold text-center relative bottom-7 ">
+          <p className="text-primary-blue text-6xl font-bold text-center relative bottom-7 ">
             Videos
           </p>
           <p className="text-center mb-3 text-[22px] font-semibold tracking-[0.2px] max-w-4xl mx-auto">
@@ -41,7 +41,7 @@ function Performance() {
             gallery!" ❤️🎥
           </p>
         </div>
-        <div className="bg-orange-peel py-14">
+        <div className="bg-light-gray py-14">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-5 p-4 max-w-[1140px] mx-auto">
             {youtubeVideos.map((video, index) => {
               const videoId = extractVideoId(video.url);
@@ -71,12 +71,17 @@ function Performance() {
             alt=""
             className="w-[85px] opacity-30 mx-auto"
           />
-          <p className="text-4xl font-semibold font-sahitya text-[#16202f] max-w-5xl mx-auto text-center leading-[66px] py-8">
-            उस हृदय का धाम होने के लिए।
-            <br /> एक सिया का राम होने के लिए। <br />
-            है किए कितने जतन मैने सुनो। <br />
-            आपका उपनाम होने के लिए।
-            <br />
+          <p className="md:text-4xl text-2xl font-semibold text-brownish-gray max-w-5xl mx-auto text-center md:leading-[66px] py-8">
+            {[
+              "उस हृदय का धाम होने के लिए।",
+              "एक सिया का राम होने के लिए।",
+              "है किए कितने जतन मैने सुनो।",
+              "आपका उपनाम होने के लिए।",
+            ].map((line, i) => (
+              <span key={i} className={`typed-line delay-${i + 1} block`}>
+                {line}
+              </span>
+            ))}
           </p>
           <p className="text-center">✍🏻 गोपाल 'गर्वित'</p>
         </div>
