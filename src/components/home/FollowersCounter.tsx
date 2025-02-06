@@ -15,7 +15,7 @@ const Counter = ({ icon, start, end, text }: CounterProps) => {
     if (count < end) {
       interval = setInterval(() => {
         setCount((prev) => (prev + 1 > end ? end : prev + 1));
-      }, 10);
+      }, 0.1);
     }
     return () => clearInterval(interval);
   }, [count, end]);
@@ -32,7 +32,7 @@ const Counter = ({ icon, start, end, text }: CounterProps) => {
 const FollowersCounter = () => {
   return (
     <div className="flex md:flex-row flex-col justify-evenly md:gap-16 gap-5 py-10">
-      <Counter icon="src/assets/images/facebook.svg" start={100} end={3000} text="Followers" />
+      <Counter icon="src/assets/images/fb.svg" start={100} end={3000} text="Followers" />
       <Counter icon="src/assets/images/instagram.svg" start={100} end={3300} text="Followers" />
       <Counter icon="src/assets/images/youtube.svg" start={100} end={1600} text="Subscribers" />
     </div>

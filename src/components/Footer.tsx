@@ -3,29 +3,41 @@ import { Link } from "react-router-dom";
 function Footer() {
   return (
     <>
-      <section className=" ">
-        <div className="flex justify-between lg:px-[100px] lg:py-6 border border-t-primary-blue border-b-primary-blue">
+      <section className="bg-[#D6E4E9] ">
+        <div className="flex justify-between lg:px-[100px] lg:py-6 border  border-t-primary-blue border-b-primary-blue">
           <img
             src="src/assets/images/texting-logo.svg"
             alt=""
             className="w-28"
           />
           <div className="md:flex hidden md:gap-2 ">
-            <a href="https://www.facebook.com/share/14eo9iDAsF/?mibextid=qi2Omg" target="_blank" className="rounded-full p-2 h-10 w-10 border border-light-gray">
+            <a
+              href="https://www.facebook.com/share/14eo9iDAsF/?mibextid=qi2Omg"
+              target="_blank"
+              className="rounded-full p-2 h-10 w-10 border border-light-gray"
+            >
               <img
                 src="src/assets/images/fb.svg"
                 alt=""
                 className="h-[24px] w-[24px]"
               />
             </a>
-            <a href="#"  target="_blank" className="rounded-full p-2 h-10 w-10 border border-light-gray">
+            <a
+              href="#"
+              target="_blank"
+              className="rounded-full p-2 h-10 w-10 border border-light-gray"
+            >
               <img
                 src="src/assets/images/instagram.svg"
                 alt=""
                 className="h-[24px] w-[24px]"
               />
             </a>
-            <a href="#" target="_blank" className="rounded-full p-2 h-10 w-10 border border-light-gray">
+            <a
+              href="#"
+              target="_blank"
+              className="rounded-full p-2 h-10 w-10 border border-light-gray"
+            >
               <img
                 src="src/assets/images/youtube.svg"
                 alt=""
@@ -40,7 +52,8 @@ function Footer() {
               Address
             </p>
             <p className="max-w-xs">
-            1st left, 5, Radhe Krishna colony, gautampura, block depalpur, district Indore, M.P.
+              1st left, 5, Radhe Krishna colony, gautampura, block depalpur,
+              district Indore, M.P.
             </p>
           </div>
           <div>
@@ -80,21 +93,33 @@ function Footer() {
             </div>
           </div>
           <div className="md:hidden flex gap-3 mt-5 ">
-            <a href="https://www.facebook.com/share/14eo9iDAsF/?mibextid=qi2Omg" target="_blank" className="rounded-full p-2 h-10 w-10 border border-light-gray">
+            <a
+              href="https://www.facebook.com/share/14eo9iDAsF/?mibextid=qi2Omg"
+              target="_blank"
+              className="rounded-full p-2 h-10 w-10 border border-light-gray"
+            >
               <img
                 src="src/assets/images/fb.svg"
                 alt=""
                 className="h-[24px] w-[24px]"
               />
             </a>
-            <a href="#"  target="_blank" className="rounded-full p-2 h-10 w-10 border border-light-gray">
+            <a
+              href="#"
+              target="_blank"
+              className="rounded-full p-2 h-10 w-10 border border-light-gray"
+            >
               <img
                 src="src/assets/images/instagram.svg"
                 alt=""
                 className="h-[24px] w-[24px]"
               />
             </a>
-            <a href="#" target="_blank" className="rounded-full p-2 h-10 w-10 border border-light-gray">
+            <a
+              href="#"
+              target="_blank"
+              className="rounded-full p-2 h-10 w-10 border border-light-gray"
+            >
               <img
                 src="src/assets/images/youtube.svg"
                 alt=""

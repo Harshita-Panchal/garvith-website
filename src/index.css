@@ -43,3 +43,16 @@
 .delay-4 {
   animation-delay: 1.8s;
 }
+
+.tab {
+  cursor: pointer;
+  background: white;
+  padding: 10px 20px;
+  border-radius: 50px;
+}
+.tab:hover {
+  transform: scale(1.15);
+  background-color: #256882;
+  border-radius: 50px;
+  color: white;
+}
