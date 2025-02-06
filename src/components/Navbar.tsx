@@ -56,9 +56,14 @@ function Navbar() {
               </li>
             </Link>
           </ul>
-          <button className="text-white  bg-[#256882] rounded-md w-44 py-2 ">
+          <a
+            href="https://wa.me/916264576510?text=Hi%20there%2C%20I%20heard%20that%20you%20have%20best%20tutors%20from%20Cambridge%2C%20Oxford%20and%20other%20top%20schools.%20I%27m%20also%20looking%20for%20a%20tutor%20in"
+            aria-label="Whatsapp"
+            target="_blank"
+            className="text-white  bg-[#256882] rounded-md w-44 py-2 text-center"
+          >
             Book Show
-          </button>
+          </a>
         </nav>
       </div>
     </>
