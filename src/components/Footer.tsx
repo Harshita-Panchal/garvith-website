@@ -1,5 +1,8 @@
 import { Link } from "react-router-dom";
 
+const scrollToTop = () => {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+};
 function Footer() {
   return (
     <>
@@ -14,7 +17,7 @@ function Footer() {
             <a
               href="https://www.facebook.com/share/14eo9iDAsF/?mibextid=qi2Omg"
               target="_blank"
-              className="rounded-full p-2 h-10 w-10 border border-light-gray"
+              className="rounded-full p-2 h-10 w-10 border border-primary-blue"
             >
               <img
                 src="src/assets/images/fb.svg"
@@ -25,7 +28,7 @@ function Footer() {
             <a
               href="#"
               target="_blank"
-              className="rounded-full p-2 h-10 w-10 border border-light-gray"
+              className="rounded-full p-2 h-10 w-10 border border-primary-blue"
             >
               <img
                 src="src/assets/images/instagram.svg"
@@ -34,9 +37,9 @@ function Footer() {
               />
             </a>
             <a
-              href="#"
+              href="https://www.youtube.com/channel/UCZF2hf-sI1Mvo5dkJ8F0DVA"
               target="_blank"
-              className="rounded-full p-2 h-10 w-10 border border-light-gray"
+              className="rounded-full p-2 h-10 w-10 border border-primary-blue"
             >
               <img
                 src="src/assets/images/youtube.svg"
@@ -61,22 +64,22 @@ function Footer() {
               Explore Menu
             </p>
             <ul className="text-base my-5">
-              <Link to="/">
+              <Link to="/" onClick={scrollToTop}>
                 <li>Home</li>
               </Link>
-              <Link to="/about">
+              <Link to="/about" onClick={scrollToTop}>
                 <li>About Garvith</li>
               </Link>
-              <Link to="/performance">
+              <Link to="/performance" onClick={scrollToTop}>
                 <li>Performance</li>
               </Link>
-              <Link to="/writting">
+              <Link to="/writting" onClick={scrollToTop}>
                 <li>Writing</li>
               </Link>
-              <Link to="/gallery">
+              <Link to="/gallery" onClick={scrollToTop}>
                 <li>Gallery</li>
               </Link>
-              <Link to="/contact-us">
+              <Link to="/contact-us" onClick={scrollToTop}>
                 <li>Contact Us</li>
               </Link>
             </ul>
@@ -96,7 +99,7 @@ function Footer() {
             <a
               href="https://www.facebook.com/share/14eo9iDAsF/?mibextid=qi2Omg"
               target="_blank"
-              className="rounded-full p-2 h-10 w-10 border border-light-gray"
+              className="rounded-full p-2 h-10 w-10 border border-primary-blue"
             >
               <img
                 src="src/assets/images/fb.svg"
@@ -107,7 +110,7 @@ function Footer() {
             <a
               href="#"
               target="_blank"
-              className="rounded-full p-2 h-10 w-10 border border-light-gray"
+              className="rounded-full p-2 h-10 w-10 border border-primary-blue"
             >
               <img
                 src="src/assets/images/instagram.svg"
@@ -118,7 +121,7 @@ function Footer() {
             <a
               href="#"
               target="_blank"
-              className="rounded-full p-2 h-10 w-10 border border-light-gray"
+              className="rounded-full p-2 h-10 w-10 border border-primary-blue"
             >
               <img
                 src="src/assets/images/youtube.svg"
@@ -129,7 +132,13 @@ function Footer() {
           </div>
         </div>
         <div className="text-center py-3  font-semibold border-t border-t-primary-blue">
-          "© 2025 | Designed and Developed by Harshita Panchal"
+          "© 2025 | Designed and Developed by <span className=""><a
+          href="#"
+            aria-label="Whatsapp"
+            target="_blank"
+            className="hover:underline"
+          >Harshita Panchal</a></span>"
+          {/* linkdin */}
         </div>
       </section>
     </>

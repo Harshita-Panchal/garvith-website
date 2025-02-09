@@ -1,7 +1,7 @@
 function AboutGarvith() {
   return (
     <>
-      <div className=" py-[70px]">
+      <div className=" pb-[70px]">
         <div className="h-[500px] w-full">
           <img
             src="src/assets/images/about-banner.jpg"
@@ -10,10 +10,10 @@ function AboutGarvith() {
           />
         </div>
         <div className="pt-[70px]">
-          <div className="md:text-8xl text-6xl font-bold text-outline text-center">
+          <div className=" text-outline">
             Gopal Garvith
           </div>
-          <p className="text-primary-blue md:text-6xl text-5xl font-bold text-center relative bottom-7 ">
+          <p className="main-text ">
             About
           </p>
         </div>

@@ -2,23 +2,21 @@
 
 const youtubeVideos = [
   {
+    url: "https://www.youtube.com/watch?v=KDt9V9UkRWY",
+  },
+  {
+    url: "https://www.youtube.com/watch?v=0rWZAHxpX0A",
+  },
+  {
     url: "https://www.youtube.com/watch?v=5p-jJskRSIE&t=25s",
   },
   {
-    url: "https://youtu.be/lBvbNxiVmZA?si=oBWVZLel_LvBCwdJ",
+    url: "https://www.youtube.com/watch?v=lpOY5gPUZOU",
   },
   {
-    url: "https://youtu.be/lBvbNxiVmZA?si=oBWVZLel_LvBCwdJ",
+    url: "https://www.youtube.com/watch?v=GtzTwc2guu0",
   },
-  {
-    url: "https://youtu.be/lBvbNxiVmZA?si=oBWVZLel_LvBCwdJ",
-  },
-  {
-    url: "https://youtu.be/lBvbNxiVmZA?si=oBWVZLel_LvBCwdJ",
-  },
-  {
-    url: "https://youtu.be/lBvbNxiVmZA?si=oBWVZLel_LvBCwdJ",
-  },
+
 ];
 // Function to extract the video ID
 const extractVideoId = (url: string) => {
