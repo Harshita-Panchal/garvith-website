@@ -8,11 +8,7 @@ function Footer() {
     <>
       <section className="">
         <div className="flex justify-between lg:px-[100px] px-5 lg:py-6 border  border-t-deep-blue border-b-deep-blue">
-          <img
-            src="src/assets/images/logo.png"
-            alt=""
-            className="w-28"
-          />
+          <img src="src/assets/images/logo.png" alt="" className="w-28" />
           <div className="md:flex items-center hidden md:gap-2 ">
             <a
               href="https://www.facebook.com/share/14eo9iDAsF/?mibextid=qi2Omg"
@@ -132,13 +128,18 @@ function Footer() {
           </div>
         </div>
         <div className="text-center py-3  font-semibold border-t border-t-deep-blue">
-          "© 2025 | Designed and Developed by <span className=""><a
-          href="#"
-            aria-label="Whatsapp"
-            target="_blank"
-            className="hover:underline"
-          >Harshita Panchal</a></span>"
-          {/* linkdin */}
+          "© 2025 | Designed and Developed by{" "}
+          <span className="">
+            <a
+              href="#"
+              aria-label="Whatsapp"
+              target="_blank"
+              className="hover:underline"
+            >
+              Harshita Panchal
+            </a>
+          </span>
+          "{/* linkdin */}
         </div>
       </section>
     </>
