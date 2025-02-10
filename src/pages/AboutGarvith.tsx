@@ -10,10 +10,10 @@ function AboutGarvith() {
           />
         </div>
         <div className="pt-[70px]">
-          <div className=" text-outline">
+          <div className="md:text-8xl text-6xl font-bold text-outline text-center">
             Gopal Garvith
           </div>
-          <p className="main-text ">
+          <p className="text-deep-blue md:text-6xl text-5xl font-bold text-center relative bottom-7 ">
             About
           </p>
         </div>

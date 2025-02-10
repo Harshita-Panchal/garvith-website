@@ -6,7 +6,7 @@ function ContactUs() {
           <div className="text-8xl font-bold text-outline text-center">
             Gopal Garvith
           </div>
-          <p className="text-primary-blue text-6xl font-bold text-center relative bottom-7 ">
+          <p className="text-deep-blue text-6xl font-bold text-center relative bottom-7 ">
             Contact Us
           </p>
           <p className="text-center mb-3 text-[22px] font-semibold tracking-[0.2px] max-w-4xl mx-auto">
@@ -17,17 +17,17 @@ function ContactUs() {
         </div>
         <div className="bg-light-gray py-24">
           <div className="max-w-[1140px] mx-auto grid grid-cols-3 gap-x-5 text-center min-h-[370px]">
-            <div className="bg-primary-blue rounded-2xl h-full mx-5 flex flex-col justify-center px-2.5">
+            <div className="bg-deep-blue rounded-2xl h-full mx-5 flex flex-col justify-center px-2.5">
               <h3 className="text-white text-3xl font-semibold mb-2">E-Mail</h3>
               <p className="text-white text-lg">gopalgarvit1718@gmail.com</p>
             </div>
-            <div className="bg-primary-blue rounded-2xl h-full mx-5 flex flex-col justify-center px-2.5">
+            <div className="bg-deep-blue rounded-2xl h-full mx-5 flex flex-col justify-center px-2.5">
               <h3 className="text-white text-3xl font-semibold mb-2">
                 Call Now
               </h3>
               <p className="text-white text-lg">+91 6264576510</p>
             </div>
-            <div className="bg-primary-blue rounded-2xl h-full mx-5 flex flex-col justify-center px-2.5">
+            <div className="bg-deep-blue rounded-2xl h-full mx-5 flex flex-col justify-center px-2.5">
               <h3 className="text-white text-3xl font-semibold mb-2">
                 Location
               </h3>

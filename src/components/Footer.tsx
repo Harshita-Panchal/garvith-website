@@ -6,18 +6,18 @@ const scrollToTop = () => {
 function Footer() {
   return (
     <>
-      <section className="bg-[#D6E4E9] ">
-        <div className="flex justify-between lg:px-[100px] lg:py-6 border  border-t-primary-blue border-b-primary-blue">
+      <section className="">
+        <div className="flex justify-between lg:px-[100px] px-5 lg:py-6 border  border-t-deep-blue border-b-deep-blue">
           <img
-            src="src/assets/images/texting-logo.svg"
+            src="src/assets/images/logo.png"
             alt=""
             className="w-28"
           />
-          <div className="md:flex hidden md:gap-2 ">
+          <div className="md:flex items-center hidden md:gap-2 ">
             <a
               href="https://www.facebook.com/share/14eo9iDAsF/?mibextid=qi2Omg"
               target="_blank"
-              className="rounded-full p-2 h-10 w-10 border border-primary-blue"
+              className="rounded-full p-2 h-10 w-10 border border-deep-blue"
             >
               <img
                 src="src/assets/images/fb.svg"
@@ -28,7 +28,7 @@ function Footer() {
             <a
               href="#"
               target="_blank"
-              className="rounded-full p-2 h-10 w-10 border border-primary-blue"
+              className="rounded-full p-2 h-10 w-10 border border-deep-blue"
             >
               <img
                 src="src/assets/images/instagram.svg"
@@ -39,7 +39,7 @@ function Footer() {
             <a
               href="https://www.youtube.com/channel/UCZF2hf-sI1Mvo5dkJ8F0DVA"
               target="_blank"
-              className="rounded-full p-2 h-10 w-10 border border-primary-blue"
+              className="rounded-full p-2 h-10 w-10 border border-deep-blue"
             >
               <img
                 src="src/assets/images/youtube.svg"
@@ -51,7 +51,7 @@ function Footer() {
         </div>
         <div className="grid md:grid-cols-3 lg:px-[100px] px-5 py-12">
           <div>
-            <p className="text-lg font-semibold mb-5 text-primary-blue ">
+            <p className="text-lg font-semibold mb-5 text-deep-blue ">
               Address
             </p>
             <p className="max-w-xs">
@@ -60,7 +60,7 @@ function Footer() {
             </p>
           </div>
           <div>
-            <p className="text-lg font-semibold mb-5 text-primary-blue">
+            <p className="text-lg font-semibold mb-5 text-deep-blue">
               Explore Menu
             </p>
             <ul className="text-base my-5">
@@ -85,7 +85,7 @@ function Footer() {
             </ul>
           </div>
           <div>
-            <p className="text-lg font-semibold mb-5 text-primary-blue">
+            <p className="text-lg font-semibold mb-5 text-deep-blue">
               Contact Us
             </p>
             <div className="flex flex-col">
@@ -99,7 +99,7 @@ function Footer() {
             <a
               href="https://www.facebook.com/share/14eo9iDAsF/?mibextid=qi2Omg"
               target="_blank"
-              className="rounded-full p-2 h-10 w-10 border border-primary-blue"
+              className="rounded-full p-2 h-10 w-10 border border-deep-blue"
             >
               <img
                 src="src/assets/images/fb.svg"
@@ -110,7 +110,7 @@ function Footer() {
             <a
               href="#"
               target="_blank"
-              className="rounded-full p-2 h-10 w-10 border border-primary-blue"
+              className="rounded-full p-2 h-10 w-10 border border-deep-blue"
             >
               <img
                 src="src/assets/images/instagram.svg"
@@ -121,7 +121,7 @@ function Footer() {
             <a
               href="#"
               target="_blank"
-              className="rounded-full p-2 h-10 w-10 border border-primary-blue"
+              className="rounded-full p-2 h-10 w-10 border border-deep-blue"
             >
               <img
                 src="src/assets/images/youtube.svg"
@@ -131,7 +131,7 @@ function Footer() {
             </a>
           </div>
         </div>
-        <div className="text-center py-3  font-semibold border-t border-t-primary-blue">
+        <div className="text-center py-3  font-semibold border-t border-t-deep-blue">
           "© 2025 | Designed and Developed by <span className=""><a
           href="#"
             aria-label="Whatsapp"

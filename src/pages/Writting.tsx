@@ -1,41 +1,21 @@
-import { useState } from "react";
-
-const tabs = [
-  { id: "muktak", label: "मुक्तक" },
-  { id: "kavita", label: "कविता" },
-  { id: "geet", label: "गीत" },
-  { id: "ghazal", label: "ग़ज़ल" },
-  { id: "nazm", label: "नज़्म" },
-  { id: "shayari", label: "शायरी" },
-];
-
-const tabContent: { [key: string]: string | string[] } = {
-  muktak: [
-    "आपका  उपनाम  होने के लिए|",
-    "फिर  कविता  में  पिरोया  जाएगा। ",
-    "जो  मेंरे  खातिर  ताज  बनाने  वाले थे।",
-    "रूखमणी  साथ  पूजी  नही  जा  सकी।",
-    "अगर हर देश वासी का हृदय श्री राम हो जाये।",
-    "मेरे इजहार  से पहले  ही तुम इजहार कर दो ना।।",
-    "हर  मंदिर  में  मन्नत  के  धागे  तुमको  मिल जाएंगे",
-    "जिंदगी  के  चार  भी  बाकी  नही।",
-    "टोकरी   में   सवार   आया  है।",
-    "ये वही  आवाज  है पहचान  लो।",
-    "पूर्णिमा की रात गंगा घाट पर।",
-    "पर्स  में  रख्खी  हुई  तस्वीर  को।",
-    "अब  बराबर  बात  है  मेरे  लिए।",
-    "चार धामों  से  कुछ नही होगा।",
-    "मित्र  हर  बार  बन  के  तू आए।",
-  ],
-  kavita: ["यह कविता का कंटेंट है।", "मित्र  हर  बार  बन  के  तू आए।"],
-  geet: ["यह गीत का कंटेंट है।", "मित्र  हर  बार  बन  के  तू आए।"],
-  ghazal: ["यह ग़ज़ल का कंटेंट है।", "मित्र  हर  बार  बन  के  तू आए।"],
-  nazm: ["यह नज़्म का कंटेंट है।", "मित्र  हर  बार  बन  के  तू आए।"],
-  shayari: ["यह शायरी का कंटेंट है।", "मित्र  हर  बार  बन  के  तू आए।"],
-};
+import { useEffect, useState } from "react";
+import { tabs, tabContent } from "../store/poetry";
 
 function PoetryTabs() {
-  const [selectedTab, setSelectedTab] = useState("muktak");
+  const [selectedTab, setSelectedTab] = useState<string | null>("muktak");
+  const [selectedTabContent, setSelectedTabContent] = useState<
+    { title: string; description: string[] }[]
+  >([]);
+  const [selectedContentId, setSelectedContentId] = useState<number | null>(
+    null
+  );
+
+  // Update selectedTabContent when tab changes
+  useEffect(() => {
+    setSelectedTabContent(tabContent[selectedTab] || []);
+    setSelectedContentId(null); // Reset selected content when switching tabs
+  }, [selectedTab]);
+
   return (
     <>
       <div className="pt-[70px]  max-w-6xl  mx-auto">
@@ -43,7 +23,7 @@ function PoetryTabs() {
           <div className="text-8xl font-bold text-outline text-center">
             Gopal Garvith
           </div>
-          <p className="text-primary-blue text-6xl font-bold text-center relative bottom-7 ">
+          <p className="text-deep-blue text-6xl font-bold text-center relative bottom-7 ">
             Writting
           </p>
           <p className="text-center mb-3 text-[22px] font-semibold tracking-[0.2px] max-w-4xl mx-auto">
@@ -52,12 +32,12 @@ function PoetryTabs() {
           </p>
         </div>
         {/* Tab Headers */}
-        <div className="flex justify-evenly items-center gap-x-2  border shadow-2xl rounded-xl  my-10 p-1">
+        <div className="flex justify-evenly items-center gap-x-2  border shadow-xl rounded-xl mx-5 my-10 p-1">
           {tabs.map((tab) => (
             <button
               key={tab.id}
-              className={`cursor-box tab w-full text-center font-medium cursor-pointer hover:bg-primary-blue hover:text-white p-4 rounded-xl ${
-                selectedTab === tab.id ? "bg-primary-blue text-white" : ""
+              className={`cursor-box tab w-full text-center font-medium cursor-pointer hover:bg-deep-blue hover:text-white p-4 rounded-xl ${
+                selectedTab === tab.id ? "bg-deep-blue text-white" : ""
               }`}
               onClick={() => setSelectedTab(tab.id)}
             >
@@ -66,17 +46,41 @@ function PoetryTabs() {
           ))}
         </div>
 
-        {/* Tab Content Line by Line */}
-        <div className="mt-4 text-center text-lg font-medium space-y-2">
-          {(Array.isArray(tabContent[selectedTab])
-            ? (tabContent[selectedTab] as string[]) // Type assertion
-            : [tabContent[selectedTab] as string]
-          ).map((line, index) => (
-            <p key={index} className="leading-relaxed">
-              {line}
-            </p>
-          ))}
-        </div>
+        {/* Show Selected Content */}
+        {selectedContentId !== null ? (
+          <div className="text-center text-2xl font-bold md:p-12 p-5 bg-[#EFF4FB] rounded-[20px] mx-5 my-14">
+            <button
+              onClick={() => setSelectedContentId(null)}
+              className="text-left w-full text-bright-red font-medium px-4 py-2 rounded-lg"
+            >
+              {/* <img src="src/assets/images/back-arrow.svg" alt="" /> */}
+              Go Back
+            </button>
+            <p>{selectedTabContent[selectedContentId].title}</p>
+            <div className="mt-4 text-lg space-y-2">
+              {selectedTabContent[selectedContentId].description.map(
+                (line, index) => (
+                  <p key={index} className="text-gray-700">
+                    {line}
+                  </p>
+                )
+              )}
+            </div>
+          </div>
+        ) : (
+          // Show All Content if no item is selected
+          <div className="my-14 text-center text-lg font-medium space-y-3 md:p-12 p-5 bg-[#EFF4FB] rounded-[20px] mx-5">
+            {selectedTabContent.map((line, index) => (
+              <p
+                key={index}
+                className="leading-relaxed p-2 bg-white border border-[#E4E4E4] rounded-[10px] md:text-2xl text-lg font-bold cursor-pointer hover:bg-gray-200"
+                onClick={() => setSelectedContentId(index)}
+              >
+                {line.title}
+              </p>
+            ))}
+          </div>
+        )}
       </div>
     </>
   );

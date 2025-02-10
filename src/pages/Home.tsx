@@ -33,7 +33,7 @@ function Home() {
           <div className="md:text-8xl text-6xl font-bold text-outline text-center">
             Gopal Garvith
           </div>
-          <p className="text-primary-blue md:text-6xl text-5xl font-bold text-center relative bottom-7 ">
+          <p className="text-deep-blue md:text-6xl text-5xl font-bold text-center relative bottom-7 ">
             Social Media
           </p>
           <p className="text-center mb-3 text-xl">

@@ -31,7 +31,7 @@ function Performance() {
           <div className="text-8xl font-bold text-outline text-center">
             Gopal Garvith
           </div>
-          <p className="text-primary-blue text-6xl font-bold text-center relative bottom-7 ">
+          <p className="text-deep-blue text-6xl font-bold text-center relative bottom-7 ">
             Videos
           </p>
           <p className="text-center mb-3 text-[22px] font-semibold tracking-[0.2px] max-w-4xl mx-auto">

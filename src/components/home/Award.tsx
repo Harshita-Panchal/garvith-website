@@ -27,7 +27,7 @@ function Home() {
           <div className="text-8xl font-bold text-outline text-center">
             Gopal Garvith
           </div>
-          <p className="text-primary-blue text-6xl font-bold text-center relative bottom-7 ">
+          <p className="text-deep-blue text-6xl font-bold text-center relative bottom-7 ">
             Awards
           </p>
           <p className="text-center mb-3 text-xl">
@@ -44,7 +44,7 @@ function Home() {
                   className="rounded-t-xl w-full h-64 object-cover"
                 />
                 <div className="p-4 text-center">
-                  <h2 className="text-lg font-bold text-primary-blue">
+                  <h2 className="text-lg font-bold text-deep-blue">
                     {award.title}
                   </h2>
                   <p className="text-gray-700 mt-2">{award.description}</p>
@@ -64,7 +64,7 @@ function Home() {
                   className="rounded-t-xl w-full h-64 object-cover"
                 />
                 <div className="p-4">
-                  <h2 className="text-lg font-bold text-primary-blue">
+                  <h2 className="text-lg font-bold text-deep-blue">
                     {award.title}
                   </h2>
                   <p className=" font-medium mt-2">{award.description}</p>

@@ -23,7 +23,9 @@ export default {
         "secondary-orange": "#f9ae65",
         "primary-blue": "#256882",
         "light-gray": "#E1E4EB",
-        "brownish-gray":"#4D4542"
+        "brownish-gray":"#4D4542", 
+        "deep-blue": "#003372",
+        "bright-red": "#F53333"
       }
     },
   },
