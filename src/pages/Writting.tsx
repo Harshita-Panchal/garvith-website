@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { tabs, tabContent } from "../store/poetry";
 
 function PoetryTabs() {
-  const [selectedTab, setSelectedTab] = useState<string | null>("muktak");
+  const [selectedTab, setSelectedTab] = useState<string>("muktak");
   const [selectedTabContent, setSelectedTabContent] = useState<
     { title: string; description: string[] }[]
   >([]);
