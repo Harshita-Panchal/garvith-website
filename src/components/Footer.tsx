@@ -8,7 +8,7 @@ function Footer() {
     <>
       <section className="">
         <div className="flex justify-between lg:px-[100px] px-5 lg:py-6 border  border-t-deep-blue border-b-deep-blue">
-          <img src="src/assets/images/logo.png" alt="" className="w-28" />
+          <img src="/images/logo.png" alt="" className="w-28" />
           <div className="md:flex items-center hidden md:gap-2 ">
             <a
               href="https://www.facebook.com/share/14eo9iDAsF/?mibextid=qi2Omg"
@@ -16,7 +16,7 @@ function Footer() {
               className="rounded-full p-2 h-10 w-10 border border-deep-blue"
             >
               <img
-                src="src/assets/images/fb.svg"
+                src="/images/fb.svg"
                 alt=""
                 className="h-[24px] w-[24px]"
               />
@@ -27,7 +27,7 @@ function Footer() {
               className="rounded-full p-2 h-10 w-10 border border-deep-blue"
             >
               <img
-                src="src/assets/images/instagram.svg"
+                src="/images/instagram.svg"
                 alt=""
                 className="h-[24px] w-[24px]"
               />
@@ -38,7 +38,7 @@ function Footer() {
               className="rounded-full p-2 h-10 w-10 border border-deep-blue"
             >
               <img
-                src="src/assets/images/youtube.svg"
+                src="/images/youtube.svg"
                 alt=""
                 className="h-[24px] w-[24px]"
               />
@@ -98,7 +98,7 @@ function Footer() {
               className="rounded-full p-2 h-10 w-10 border border-deep-blue"
             >
               <img
-                src="src/assets/images/fb.svg"
+                src="/images/fb.svg"
                 alt=""
                 className="h-[24px] w-[24px]"
               />
@@ -109,7 +109,7 @@ function Footer() {
               className="rounded-full p-2 h-10 w-10 border border-deep-blue"
             >
               <img
-                src="src/assets/images/instagram.svg"
+                src="/images/instagram.svg"
                 alt=""
                 className="h-[24px] w-[24px]"
               />
@@ -120,7 +120,7 @@ function Footer() {
               className="rounded-full p-2 h-10 w-10 border border-deep-blue"
             >
               <img
-                src="src/assets/images/youtube.svg"
+                src="/images/youtube.svg"
                 alt=""
                 className="h-[24px] w-[24px]"
               />

@@ -53,7 +53,7 @@ function PoetryTabs() {
               onClick={() => setSelectedContentId(null)}
               className="text-left w-full text-bright-red font-medium px-4 py-2 rounded-lg"
             >
-              {/* <img src="src/assets/images/back-arrow.svg" alt="" /> */}
+              {/* <img src="/images/back-arrow.svg" alt="" /> */}
               Go Back
             </button>
             <p>{selectedTabContent[selectedContentId].title}</p>

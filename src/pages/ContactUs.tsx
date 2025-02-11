@@ -39,7 +39,7 @@ function ContactUs() {
         </div>
         <div className=" py-[70px]">
           <img
-            src="src/assets/images/quotes.png"
+            src="/images/quotes.png"
             alt=""
             className="w-[85px] opacity-30 mx-auto"
           />

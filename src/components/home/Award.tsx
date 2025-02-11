@@ -1,18 +1,18 @@
 const awards = [
   {
-    image: "src/assets/images/testing-img.png",
+    image: "/images/testing-img.png",
     title: "Honoured by the Governor of Karnataka, Dr. Thawarchand Gehlot Ji",
     description:
       "Honoured under the Hindi Conference 2024 at Indian Air Force Training Command Headquarters, Bangalore.",
   },
   {
-    image: "src/assets/images/testing-img.png",
+    image: "/images/testing-img.png",
     title: "Yuva Geetkar Award Rs. 51000/- by Yug Kavi Dr. Kumar Vishwas Ji",
     description:
       "Awarded 'Yuva Geetkar Award' (Rs. 51000/-) in September 2024 by Vishwas Trust run by Dr. Kumar Vishwas Ji.",
   },
   {
-    image: "src/assets/images/testing-img.png",
+    image: "/images/testing-img.png",
     title: "Honored with 'MP Ke Nayak' Title by MP News Indore",
     description:
       "Honored by the Chief Minister of Madhya Pradesh, Dr. Mohan Yadav Ji, in October 2024.",

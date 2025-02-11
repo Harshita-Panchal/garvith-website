@@ -1,39 +1,39 @@
 const gallery = [
   {
-    image: "src/assets/gallery/download.jpg",
+    image: "/gallery/download.jpg",
   },
   {
-    image: "src/assets/gallery/download.jpg",
+    image: "/gallery/download.jpg",
   },
   {
-    image: "src/assets/gallery/download.jpg",
+    image: "/gallery/download.jpg",
   },
   {
-    image: "src/assets/gallery/download.jpg",
+    image: "/gallery/download.jpg",
   },
   {
-    image: "src/assets/gallery/download.jpg",
+    image: "/gallery/download.jpg",
   },
   {
-    image: "src/assets/gallery/download.jpg",
+    image: "/gallery/download.jpg",
   },
   {
-    image: "src/assets/gallery/download.jpg",
+    image: "/gallery/download.jpg",
   },
   {
-    image: "src/assets/gallery/download.jpg",
+    image: "/gallery/download.jpg",
   },
   {
-    image: "src/assets/gallery/download.jpg",
+    image: "/gallery/download.jpg",
   },
   {
-    image: "src/assets/gallery/download.jpg",
+    image: "/gallery/download.jpg",
   },
   {
-    image: "src/assets/gallery/download.jpg",
+    image: "/gallery/download.jpg",
   },
   {
-    image: "src/assets/gallery/download.jpg",
+    image: "/gallery/download.jpg",
   },
 ];
 

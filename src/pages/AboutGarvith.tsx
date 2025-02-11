@@ -4,7 +4,7 @@ function AboutGarvith() {
       <div className=" pb-[70px]">
         <div className="h-[500px] w-full">
           <img
-            src="src/assets/images/about-banner.jpg"
+            src="/images/about-banner.jpg"
             alt=""
             className="object-cover h-full w-full"
           />
@@ -77,7 +77,7 @@ function AboutGarvith() {
           <br />
         </div>
         <img
-          src="src/assets/images/quotes.png"
+          src="/images/quotes.png"
           alt=""
           className="w-[85px] opacity-30 mx-auto"
         />

@@ -1,9 +1,16 @@
 function About() {
-    return (
-<>
-<div className="pt-16">
-{/* bg-[#96775F] */}
-        <div className="max-w-[1140px] mx-auto py-8 bg-light-gray rounded-2xl shadow-[0_0_9px_2px_rgba(0,0,0,0.15)]">
+  return (
+    <>
+      <div className="">
+        <div className="realtive h-[600px] w-full bg-[url('/images/about-banner.jpg')] bg-no-repeat bg-cover bg-center shadow-[inset_0_-28em_8em_#00000080]">
+          {/* <img
+            src="/images/about-banner.jpg"
+            alt=""
+            className="object-cover h-full w-full"
+          /> */}
+          <p className="absolute bottom-1/4 -translate-y-1/4 px-10 text-white lg:text-[70px] italic font-bold">Gopal Garvith</p>
+        </div>
+        <div className="max-w-[1140px] mx-auto py-8 bg-light-gray rounded-2xl shadow-[0_0_9px_2px_rgba(0,0,0,0.15)] mt-16">
           <p className="text-deep-blue  text-center pb-8 text-6xl font-bold">
             About
           </p>
@@ -13,7 +20,7 @@ function About() {
           <div className="flex p-10 pt-16">
             <div className="rounded-2xl h-[365px] w-full  relative left-8 ">
               <img
-                src="src/assets/images/testing-img.png"
+                src="/images/testing-img.png"
                 alt=""
                 className="object-cover h-full w-full rounded-2xl"
               />
@@ -44,7 +51,7 @@ function About() {
             </div>
             <div className="rounded-2xl h-[365px] w-full  relative right-8 ">
               <img
-                src="src/assets/images/testing-img.png"
+                src="/images/testing-img.png"
                 alt=""
                 className="object-cover h-full w-full rounded-2xl"
               />
@@ -53,7 +60,7 @@ function About() {
           <div className="flex p-10 pt-16">
             <div className="rounded-2xl h-[365px] w-full  relative left-8 ">
               <img
-                src="src/assets/images/testing-img.png"
+                src="/images/testing-img.png"
                 alt=""
                 className="object-cover h-full w-full rounded-2xl"
               />
@@ -84,7 +91,7 @@ function About() {
             </div>
             <div className="rounded-2xl h-[365px] w-full  relative right-8 ">
               <img
-                src="src/assets/images/testing-img.png"
+                src="/images/testing-img.png"
                 alt=""
                 className="object-cover h-full w-full rounded-2xl"
               />
@@ -93,7 +100,7 @@ function About() {
           <div className="flex p-10 pt-16">
             <div className="rounded-2xl h-[365px] w-full  relative left-8 ">
               <img
-                src="src/assets/images/testing-img.png"
+                src="/images/testing-img.png"
                 alt=""
                 className="object-cover h-full w-full rounded-2xl"
               />
@@ -112,8 +119,8 @@ function About() {
           </div>
         </div>
       </div>
-</>
-    )
+    </>
+  );
 }
 
 export default About;

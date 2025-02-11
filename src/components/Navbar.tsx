@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import menuIcon from "../assets/images/hamburger.svg";
-import closeIcon from "../assets/images/cancel.svg";
+import menuIcon from "/images/hamburger.svg";
+import closeIcon from "/images/cancel.svg";
 const scrollToTop = () => {
   window.scrollTo({ top: 0, behavior: "smooth" });
 };
@@ -16,7 +16,7 @@ const Navbar = () => {
             {/* Logo */}
             <div className="flex-shrink-0">
               <Link to="/" onClick={scrollToTop}>
-                <img src="src/assets/images/logo.png" alt="" className="w-28" />
+                <img src="/images/logo.png" alt="" className="w-28" />
               </Link>
             </div>
 
