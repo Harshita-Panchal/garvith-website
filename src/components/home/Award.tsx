@@ -53,7 +53,7 @@ function Home() {
             ))}
           </div>
         </div>
-        <div className="py-14"></div>
+        {/* <div className="py-14"></div>
         <div className="bg-[#E0E2EE] py-24">
           <div className="grid md:grid-cols-3 gap-6 py-16 px-6 max-w-[1140px] mx-auto bg-white rounded-2xl shadow-[0_0_9px_2px_rgba(0,0,0,0.15)]">
             {awards.map((award) => (
@@ -72,7 +72,7 @@ function Home() {
               </div>
             ))}
           </div>
-        </div>
+        </div> */}
         
       </div>
     </>

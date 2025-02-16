@@ -22,7 +22,7 @@ const Navbar = () => {
 
             {/* Desktop Menu */}
             <div className="hidden md:flex space-x-5">
-              {["Home", "About", "Performance", "writting", "Gallery"].map(
+              {["Home", "Performance", "writting", "Gallery"].map(
                 (item) => (
                   <Link
                     key={item}
@@ -70,7 +70,7 @@ const Navbar = () => {
         {/* Mobile Menu */}
         {isOpen && (
           <div className="md:hidden bg-[#D6E4E9] p-4">
-            {["Home", "About", "Performance", "writting", "Gallery"].map(
+            {["Home", "Performance", "writting", "Gallery"].map(
               (item) => (
                 <Link
                   key={item}

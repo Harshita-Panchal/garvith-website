@@ -16,7 +16,6 @@ const youtubeVideos = [
   {
     url: "https://www.youtube.com/watch?v=GtzTwc2guu0",
   },
-
 ];
 // Function to extract the video ID
 const extractVideoId = (url: string) => {
@@ -71,10 +70,10 @@ function Performance() {
           />
           <p className="md:text-4xl text-2xl font-semibold text-brownish-gray max-w-5xl mx-auto text-center md:leading-[66px] py-8">
             {[
-              "उस हृदय का धाम होने के लिए।",
-              "एक सिया का राम होने के लिए।",
-              "है किए कितने जतन मैने सुनो।",
-              "आपका उपनाम होने के लिए।",
+              "पुनः  नयनों को  भिगोया जाएगा।",
+              "पूर्णकालिक  दुख संजोया जाएगा।",
+              "अश्रुमोती  को   पतन  से रोक कर।",
+              "फिर  कविता  में  पिरोया  जाएगा। ",
             ].map((line, i) => (
               <span key={i} className={`typed-line delay-${i + 1} block`}>
                 {line}

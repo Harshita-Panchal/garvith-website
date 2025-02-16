@@ -45,10 +45,10 @@ function ContactUs() {
           />
           <p className="md:text-4xl text-2xl font-semibold text-brownish-gray max-w-5xl mx-auto text-center md:leading-[66px] py-8">
             {[
-              "उस हृदय का धाम होने के लिए।",
-              "एक सिया का राम होने के लिए।",
-              "है किए कितने जतन मैने सुनो।",
-              "आपका उपनाम होने के लिए।",
+              "प्रेम का  सार  बन  के तू आए ।",
+              "हर्ष का  द्वार  बन  के  तू आए।",
+              "जब भी में जन्म इस धरा पर लूँ।",
+              "मित्र  हर  बार  बन  के  तू आए।",
             ].map((line, i) => (
               <span key={i} className={`typed-line delay-${i + 1} block`}>
                 {line}
